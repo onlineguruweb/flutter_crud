@@ -13,7 +13,7 @@ class _CreateUSerState extends State<CreateUSer> {
   bool _valMobile = false;
 
   Future __saveDetails(String name, String mobile) async {
-    var url = "http://192.168.1.6/api/create.php";
+    var url = "http://192.168.1.8/api/create.php";
 
     final response =
         await http.post(url, body: {"name": name, "mobile": mobile});

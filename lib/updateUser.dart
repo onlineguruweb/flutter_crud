@@ -19,7 +19,7 @@ class _UpdateUserState extends State<UpdateUser> {
   bool _valMobile = false;
 
   Future __updateDetails(String name, String mobile) async {
-    var url = "http://192.168.1.6/api/update.php";
+    var url = "http://192.168.1.8/api/update.php";
 
     final response = await http
         .post(url, body: {"id": widget.id, "name": name, "mobile": mobile});

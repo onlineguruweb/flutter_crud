@@ -15,7 +15,7 @@ void main() {
 }
 
 Future<List> getData() async {
-  var url = "http://192.168.1.6/api/";
+  var url = "http://192.168.1.8/api/";
 
   final response = await http.get(url);
   var datareceived = json.decode(response.body);
